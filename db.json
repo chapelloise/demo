@@ -1,14 +1,25 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
+  "users": [
+  { "id": "a@foo.com", "type": "user", "privilege": "Full Access" },
+  { "id": "b@foo.com", "type": "user", "privilege": "Data Entry Only" },
+  { "id": "Dev Group", "type": "group", "privilege": "Full Access" },
+  { "id": "SQA Group", "type": "group", "privilege": "Custom2" }
+],
+  "allusergroups": [
+    { "id": "a@foo.com", "type": "user" },
+    { "id": "b@foo.com", "type": "user" },
+    { "id": "c@foo.com", "type": "user" },
+    { "id": "d@foo.com", "type": "user" },
+    { "id": "Dev Group", "type": "group", "members": ["a@foo.com", "b@foo.com"] },
+    { "id": "SQA Group", "type": "group", "members": ["c@foo.com"] },
+    { "id": "PM Group", "type": "group", "members": ["d@foo.com"] }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "privilegesets": [
+    "Full Access",
+    "Data Entry Only",
+    "Read-Only Access",
+    "Custom1",
+    "Custom2",
+    "Custom3"
+  ]
 }

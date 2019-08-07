@@ -1,18 +1,18 @@
 {
   "users": [
-  { "id": "a@foo.com", "type": "user", "privilege": "Full Access" },
-  { "id": "b@foo.com", "type": "user", "privilege": "Data Entry Only" },
-  { "id": "Dev Group", "type": "group", "privilege": "Full Access" },
-  { "id": "SQA Group", "type": "group", "privilege": "Custom2" }
+  { "id": "1", "name": "a@foo.com", "type": "user", "privilege": "Full Access" },
+  { "id": "2", "name": "b@foo.com", "type": "user", "privilege": "Data Entry Only" },
+  { "id": "5", "name": "Dev Group", "type": "group", "privilege": "Full Access" },
+  { "id": "6", "name": "SQA Group", "type": "group", "privilege": "Custom2" }
 ],
   "allusergroups": [
-    { "id": "a@foo.com", "type": "user" },
-    { "id": "b@foo.com", "type": "user" },
-    { "id": "c@foo.com", "type": "user" },
-    { "id": "d@foo.com", "type": "user" },
-    { "id": "Dev Group", "type": "group", "members": ["a@foo.com", "b@foo.com"] },
-    { "id": "SQA Group", "type": "group", "members": ["c@foo.com"] },
-    { "id": "PM Group", "type": "group", "members": ["d@foo.com"] }
+    { "id": "1", "name": "a@foo.com", "type": "user" },
+    { "id": "2", "name": "b@foo.com", "type": "user" },
+    { "id": "3", "name": "c@foo.com", "type": "user" },
+    { "id": "4", "name": "d@foo.com", "type": "user" },
+    { "id": "5", "name": "Dev Group", "type": "group", "members": ["a@foo.com", "b@foo.com"] },
+    { "id": "6", "name": "SQA Group", "type": "group", "members": ["c@foo.com"] },
+    { "id": "7", "name": "PM Group", "type": "group", "members": ["d@foo.com"] }
   ],
   "privilegesets": [
     "Full Access",
